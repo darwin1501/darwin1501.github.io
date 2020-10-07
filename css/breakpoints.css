@@ -1,0 +1,37 @@
+
+
+@media screen and (max-width: 600px) {
+  .topnav>a{display: none;}
+  .topnav a.icon {
+    float: left;
+    display: block;
+  }
+  .topnav .toogle-btn-container {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .icon{
+    margin-left: 5px;
+  }
+  .topnav.responsive {
+    position: fixed;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .topnav.responsive a{
+    float: none;
+    display: block;
+    text-align: right;
+    margin-right: 20px;
+  }
+  .topnav.responsive{
+    height: 230px !important;
+  }
+  
+}

@@ -1,0 +1,183 @@
+
+
+/*global style*/
+body{
+	background-color: #0091c2;
+	overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  padding-top: 50px;
+}
+.landing-img-light{
+	background-image: url(../img/svg/bg_light.svg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+/*  width: 100vw;*/
+	height: 100vh;
+	/*hide extra space around the image*/
+	margin: -3%;
+	overflow-x: hidden;
+	position: relative;
+/*  bottom: 0;*/
+}
+
+
+/*nav bar style*/
+.topnav{
+ /* background: #2c48b6;*/
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 70px;
+  text-align: center;
+ /* transition: top 0.5s ease-in-out;*/
+  transition: .5s;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.nav-bg{
+  background: #2c48b6;
+  height: 70px;
+}
+.nav-bg-i{
+  background: #2c48b6 !important;
+}
+
+.topnav .icon{
+  display: none;
+}
+
+.topnav.hide {
+   top: -100px;
+}
+
+.toogle-btn-container{
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+.toggle-hide{
+  display: none !important;
+}
+
+/* animated menu icon style*/
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/*toogle button config START*/
+/*toogle button design*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  border-radius: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+/*default slider bg color*/
+.slider{
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #9999;
+/*  border: solid black 5px;*/
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+/*when the slider(circle) at the left*/
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background: url(../img/svg/light_mode.svg) center center no-repeat;
+  background-repeat: no-repeat;
+  background-size: 70% 70%;
+  background-color: #999999;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+/*when the slider(circle) at the right*/
+input:checked + .slider {
+  background-color: #000;
+}
+
+/*when the slider(circle) at the right*/
+input:checked + .slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background: url(../img/svg/dark_mode.svg) center center no-repeat;
+  background-repeat: no-repeat;
+  background-size: 70% 70%;
+  background-color: #999999;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+/*toogle button config END*/
