@@ -1,5 +1,5 @@
 
-
+sessionStorage.theme = 'off'
 // hide show nav
 
 var prevScrollpos = window.scrollY;
