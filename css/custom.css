@@ -7,28 +7,6 @@ body{
   margin: 0;
   padding: 0;
 }
-.landing-img{
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-/*  width: 100vw;*/
-  height: 100vh;
-  /*hide extra space around the image*/
-  margin: -3%;
-  overflow-x: hidden;
-  position: relative;
- /* -webkit-transition: background-image 0.5s linear;*/
- /* transition: background 0.1s step-end;*/
-}
-.landing-img-light{
-	background-image: url(../img/svg/bg_light.svg);
-}
-
-.landing-img-night{
-  background-image: url(../img/svg/bg_night.svg);
-}
-
-
 /*nav bar style*/
 .topnav{
  /* background: #2c48b6;*/
@@ -50,6 +28,16 @@ body{
   text-decoration: none;
   font-size: 17px;
 }
+#landing-img img{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  /*hide extra space around the image*/
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  right: 0;
+}
 .nav-bg{
   background: #2c48b6;
   height: 70px;
@@ -57,7 +45,9 @@ body{
 .nav-bg-i{
   background: #2c48b6 !important;
 }
-
+.nav-container{
+  z-index: 1; position: absolute;
+}
 .topnav .icon{
   display: none;
 }
@@ -67,13 +57,11 @@ body{
 .toggle-hide{
   display: none !important;
 }
-
 /* animated menu icon style*/
 .container {
   display: inline-block;
   cursor: pointer;
 }
-
 .bar1, .bar2, .bar3 {
   width: 35px;
   height: 5px;
@@ -90,7 +78,6 @@ body{
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
 }
-
 /*toogle button config START*/
 /*toogle button design*/
 .switch {
@@ -137,7 +124,6 @@ body{
 input:checked + .slider {
   background-color: #000;
 }
-
 /*when the slider(circle) at the right*/
 input:checked + .slider:before {
   position: absolute;
@@ -153,23 +139,18 @@ input:checked + .slider:before {
   -webkit-transition: .4s;
   transition: .4s;
 }
-
 input:focus + .slider {
   box-shadow: 0 0 1px #2196F3;
 }
-
 input:checked + .slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
 }
-
 /* Rounded sliders */
-
 .slider.round {
   border-radius: 34px;
 }
-
 .slider.round:before {
   border-radius: 50%;
 }

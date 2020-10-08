@@ -8,24 +8,28 @@
 	<link rel="stylesheet" type="text/css" href="css/breakpoints.css">
 </head>
 <body>
-<div class="landing-img-light landing-img" id="landing-img">
-	<div class="topnav" id="myTopnav">
-		  <a href="#home" class="active">Home</a>
-		  <a href="#news">News</a>
-		  <a href="#contact">Contact</a>
-		  <a href="#about">About</a>
-		  <div class="toogle-btn-container" id="toggle-btn">
-	        <label class="switch">
-	            <input type="checkbox" id="darkmode-btn" value="on">
-	            <span class="slider round"></span>
-	        </label>
-    	</div>
-		  <a href="javascript:void(0);" class="icon container" onclick="myFunction()">
-		      <div class="bar1"></div>
-		      <div class="bar2"></div>
-		      <div class="bar3"></div>
-		  </a>
+<div id="landing-img">
+	<div class="nav-container">
+		<div class="topnav" id="myTopnav">
+			  <a href="#home" class="active">Home</a>
+			  <a href="#news">News</a>
+			  <a href="#contact">Contact</a>
+			  <a href="#about">About</a>
+			  <div class="toogle-btn-container" id="toggle-btn">
+		        <label class="switch">
+		            <input type="checkbox" id="darkmode-btn" value="on">
+		            <span class="slider round"></span>
+		        </label>
+	    	</div>
+			  <a href="javascript:void(0);" class="icon container" onclick="myFunction()">
+			      <div class="bar1"></div>
+			      <div class="bar2"></div>
+			      <div class="bar3"></div>
+			  </a>
+		</div>
 	</div>
+	<img src="img/svg/bg_night.svg">
+  	<img id="img_default" src="img/svg/bg_light.svg">
 </div>
 <div class="content" style="padding-bottom: 1200px;"></div>
 <script src="js/logic.js"></script>

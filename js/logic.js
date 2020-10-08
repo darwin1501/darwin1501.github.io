@@ -91,24 +91,34 @@ document.getElementById("darkmode-btn").addEventListener("click", function(){
 
   const value = this.value
 
-  const landingImg = document.getElementById('landing-img');
+  // const landingImg = document.getElementById('landing-img');
+
+  const imgDefault = document.getElementById('img_default');
 
   if (value === 'off') {
-
+    //light mode
     document.getElementById("darkmode-btn").value = 'on';
 
-    landingImg.classList.add('landing-img-light');
+    // landingImg.classList.add('landing-img-light');
 
-    landingImg.classList.remove('landing-img-night');
+    // landingImg.classList.remove('landing-img-night');
+
+    imgDefault.style.transition = 'all 0.9s ease';
+
+    imgDefault.style.opacity = 1;
     
 
   }else if (value === 'on'){
-
+    // night mode
     document.getElementById("darkmode-btn").value = 'off';
 
-    landingImg.classList.add('landing-img-night');
+    // landingImg.classList.add('landing-img-night');
 
-    landingImg.classList.remove('landing-img-light');
+    // landingImg.classList.remove('landing-img-light');
+
+    imgDefault.style.transition = 'all 0.9s ease';
+
+    imgDefault.style.opacity = 0;
 
   };
 
