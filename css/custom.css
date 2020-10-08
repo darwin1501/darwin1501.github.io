@@ -6,20 +6,26 @@ body{
 	overflow-x: hidden;
   margin: 0;
   padding: 0;
-  padding-top: 50px;
+}
+.landing-img{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+/*  width: 100vw;*/
+  height: 100vh;
+  /*hide extra space around the image*/
+  margin: -3%;
+  overflow-x: hidden;
+  position: relative;
+ /* -webkit-transition: background-image 0.5s linear;*/
+ /* transition: background 0.1s step-end;*/
 }
 .landing-img-light{
 	background-image: url(../img/svg/bg_light.svg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center center;
-/*  width: 100vw;*/
-	height: 100vh;
-	/*hide extra space around the image*/
-	margin: -3%;
-	overflow-x: hidden;
-	position: relative;
-/*  bottom: 0;*/
+}
+
+.landing-img-night{
+  background-image: url(../img/svg/bg_night.svg);
 }
 
 
@@ -35,7 +41,6 @@ body{
  /* transition: top 0.5s ease-in-out;*/
   transition: .5s;
 }
-
 .topnav a {
   float: left;
   display: block;
@@ -45,7 +50,6 @@ body{
   text-decoration: none;
   font-size: 17px;
 }
-
 .nav-bg{
   background: #2c48b6;
   height: 70px;
@@ -57,16 +61,9 @@ body{
 .topnav .icon{
   display: none;
 }
-
 .topnav.hide {
    top: -100px;
 }
-
-.toogle-btn-container{
-  margin-top: 10px;
-  margin-right: 20px;
-}
-
 .toggle-hide{
   display: none !important;
 }
@@ -84,14 +81,11 @@ body{
   margin: 6px 0;
   transition: 0.4s;
 }
-
 .change .bar1 {
   -webkit-transform: rotate(-45deg) translate(-9px, 6px);
   transform: rotate(-45deg) translate(-9px, 6px);
 }
-
 .change .bar2 {opacity: 0;}
-
 .change .bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
@@ -106,7 +100,6 @@ body{
   height: 34px;
   border-radius: 34px;
 }
-
 .switch input { 
   opacity: 0;
   width: 0;

@@ -62,8 +62,8 @@ function myFunction() {
 
         x.className = "topnav";
 
-        // x.classList.toggle('nav-bg')
       }
+
   }else{
 
       if(x.className === "topnav"){
@@ -83,8 +83,6 @@ function myFunction() {
 
         x.classList.add('nav-bg')
       }
-      
-
   }
 
 }
@@ -93,14 +91,25 @@ document.getElementById("darkmode-btn").addEventListener("click", function(){
 
   const value = this.value
 
+  const landingImg = document.getElementById('landing-img');
 
   if (value === 'off') {
 
     document.getElementById("darkmode-btn").value = 'on';
 
+    landingImg.classList.add('landing-img-light');
+
+    landingImg.classList.remove('landing-img-night');
+    
+
   }else if (value === 'on'){
 
     document.getElementById("darkmode-btn").value = 'off';
+
+    landingImg.classList.add('landing-img-night');
+
+    landingImg.classList.remove('landing-img-light');
+
   };
 
 
