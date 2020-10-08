@@ -7,6 +7,9 @@ body{
   margin: 0;
   padding: 0;
 }
+#img_default{
+/*  transition-delay: 1s;*/
+}
 /*nav bar style*/
 .topnav{
  /* background: #2c48b6;*/
@@ -32,14 +35,18 @@ body{
   position: absolute;
   width: 100vw;
   height: 100vh;
-  /*hide extra space around the image*/
   object-fit: cover;
   top: 0;
   left: 0;
   right: 0;
+  bottom: 0;
 }
-.nav-bg{
-  background: #2c48b6;
+.nav-bg-light{
+  background: #99d6f2;
+  height: 70px;
+}
+.nav-bg-night{
+  background: #5b2a96;
   height: 70px;
 }
 .nav-bg-i{
@@ -100,7 +107,7 @@ body{
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #9999;
+  background-color: #82ccec;
 /*  border: solid black 5px;*/
   -webkit-transition: .4s;
   transition: .4s;
@@ -116,13 +123,13 @@ body{
   background: url(../img/svg/light_mode.svg) center center no-repeat;
   background-repeat: no-repeat;
   background-size: 70% 70%;
-  background-color: #999999;
+  background-color: #6bc1e7;
   -webkit-transition: .4s;
   transition: .4s;
 }
-/*when the slider(circle) at the right*/
+/*when the slider at the right*/
 input:checked + .slider {
-  background-color: #000;
+  background-color: #9537c2;
 }
 /*when the slider(circle) at the right*/
 input:checked + .slider:before {
@@ -135,7 +142,7 @@ input:checked + .slider:before {
   background: url(../img/svg/dark_mode.svg) center center no-repeat;
   background-repeat: no-repeat;
   background-size: 70% 70%;
-  background-color: #999999;
+  background-color: #7134bb;
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -155,3 +162,24 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 /*toogle button config END*/
+
+/*light mode/ night mode style*/
+
+/*transitions*/
+body{
+  transition: 0.9s;
+}
+
+
+/*ligth mode*/
+
+.body-lht{
+  background-color: #0091c2;
+}
+
+/*night mode*/
+
+.body-drk{
+  background-color: #003b4f !important;
+}
+

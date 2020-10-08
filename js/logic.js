@@ -12,10 +12,26 @@ window.addEventListener('scroll', () => {
 
   if(currentScrollPos === 0){
 
-    nav.classList.remove('nav-bg');
+    if(sessionStorage.theme === 'off'){
+      // light
+      nav.classList.remove('nav-bg-light');
+
+    }else if(sessionStorage.theme === 'on'){
+      // night
+      nav.classList.remove('nav-bg-night');
+    }
 
 }else{
-    nav.classList.add('nav-bg');
+
+    if(sessionStorage.theme === 'off'){
+      // light
+      nav.classList.add('nav-bg-light');
+
+    }else if(sessionStorage.theme === 'on'){
+      // night
+      nav.classList.add('nav-bg-night');
+
+    }
 
 }
 
@@ -31,6 +47,81 @@ window.addEventListener('scroll', () => {
   prevScrollpos = currentScrollPos;
 
 });
+
+document.getElementById("darkmode-btn").addEventListener("click", function(){
+
+  const themeValue = this.value
+
+  // elements to be change
+
+  const body = document.querySelector('body');
+
+  const imgDefault = document.getElementById('img_default');
+
+  const topNav = document.getElementById('myTopnav');
+
+  if (themeValue === 'off') {
+
+    //light mode
+    document.getElementById("darkmode-btn").value = 'on';
+
+    imgDefault.style.transition = 'all 0.9s ease';
+
+    imgDefault.style.opacity = 1;
+
+
+    body.classList.add('body-lht');
+
+    body.classList.remove('body-drk');
+
+    if(window.scrollY === 0){
+
+        topNav.classList.remove('nav-bg-night');
+
+        topNav.classList.remove('nav-bg-light');
+
+    }else{
+
+        topNav.classList.add('nav-bg-light');
+
+        topNav.classList.remove('nav-bg-night');
+
+    }
+    
+
+  }else if (themeValue === 'on'){
+
+    // night mode
+    document.getElementById("darkmode-btn").value = 'off';
+
+    imgDefault.style.transition = 'all 0.9s ease';
+
+    imgDefault.style.opacity = 0;
+
+
+    body.classList.add('body-drk');
+
+    body.classList.remove('body-lht');
+
+    if(window.scrollY === 0){
+
+        topNav.classList.remove('nav-bg-night');
+
+        topNav.classList.remove('nav-bg-light');
+
+    }else{
+
+        topNav.classList.add('nav-bg-night');
+
+        topNav.classList.remove('nav-bg-light');
+
+    }
+  };
+
+  sessionStorage.theme = themeValue;
+
+  console.log(sessionStorage.theme);
+})
 
 //
 function myFunction() {
@@ -53,75 +144,69 @@ function myFunction() {
 
   if(currentScrollPos === 0){
 
-      if (x.className === "topnav") {
+      if(sessionStorage.theme === 'off'){
+                      //light
+            if (x.className === "topnav") {
 
-        x.className += " responsive";
+              x.className += " responsive";
 
-        x.classList.toggle('nav-bg')
-      } else {
+              x.classList.toggle('nav-bg-light')
+            } else {
 
-        x.className = "topnav";
+              x.className = "topnav";
+            }
+        }else if(sessionStorage.theme === 'on'){
+                // night
+          if (x.className === "topnav") {
 
-      }
+              x.className += " responsive";
+
+              x.classList.toggle('nav-bg-night')
+            } else {
+
+              x.className = "topnav";
+            }
+        }
 
   }else{
 
-      if(x.className === "topnav"){
+      if(sessionStorage.theme === 'off'){
+          // light
+            if(x.className === "topnav"){
 
-        x.className += " responsive";
+              x.className += " responsive";
 
-        x.classList.add('nav-bg')
+              x.classList.add('nav-bg-light')
 
-      }else if (x.className === "topnav nav-bg") {
+            }else if (x.className === "topnav nav-bg-light") {
 
-        x.className += " responsive";
+              x.className += " responsive";
 
-        // x.classList.toggle('nav-bg')
-      } else {
+            } else {
 
-        x.className = "topnav";
+              x.className = "topnav";
 
-        x.classList.add('nav-bg')
+              x.classList.add('nav-bg-light')
+            }
+
+      }else if(sessionStorage.theme === 'on'){
+              // night
+            if(x.className === "topnav"){
+
+                x.className += " responsive";
+
+                x.classList.add('nav-bg-night')
+
+            }else if (x.className === "topnav nav-bg-night") {
+
+              x.className += " responsive";
+
+            } else {
+
+              x.className = "topnav";
+
+              x.classList.add('nav-bg-night')
+            }
+          }
       }
-  }
-
 }
-
-document.getElementById("darkmode-btn").addEventListener("click", function(){
-
-  const value = this.value
-
-  // const landingImg = document.getElementById('landing-img');
-
-  const imgDefault = document.getElementById('img_default');
-
-  if (value === 'off') {
-    //light mode
-    document.getElementById("darkmode-btn").value = 'on';
-
-    // landingImg.classList.add('landing-img-light');
-
-    // landingImg.classList.remove('landing-img-night');
-
-    imgDefault.style.transition = 'all 0.9s ease';
-
-    imgDefault.style.opacity = 1;
-    
-
-  }else if (value === 'on'){
-    // night mode
-    document.getElementById("darkmode-btn").value = 'off';
-
-    // landingImg.classList.add('landing-img-night');
-
-    // landingImg.classList.remove('landing-img-light');
-
-    imgDefault.style.transition = 'all 0.9s ease';
-
-    imgDefault.style.opacity = 0;
-
-  };
-
-
-  console.log(value);
-})
