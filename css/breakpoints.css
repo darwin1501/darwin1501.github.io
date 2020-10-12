@@ -17,8 +17,78 @@
 }
 
 @media screen and (max-width: 600px) {
+  .box{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .container, main{
+    padding-top: 55vh;
+  }
+  .content-group{
+    margin: 10% 0 30% 0;
+  }
+  .content-title{
+    font-size: 24px;
+  }
+  .content-sub-title{
+    font-size: 18px;
+  }
+  .divider{
+    width: 90vw;
+    border: 1px solid white;
+    margin: 10px auto 10px auto;
+  /*  border-left; none;*/
+  /*  margin: auto;
+    padding: 10px 0 10px 0;*/
+  }
+  .divider-sm{
+    width: 75vw;
+    border: 0.1px solid white;
+    border-width: thin;
+    margin: 10px auto 10px auto;
+  }
   .icon{
     margin-left: 5px;
+  }
+  main{
+    max-width: 100%;
+    margin: auto;
+  }
+  .landing-txt{
+    font-size:35px;
+    margin: 25% 10%;
+  }
+  .profile-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+    background-color: #b0e1f7;
+  /*position: absolute;*/
+  }
+  .profile-txt{
+    font-size: 14px;
+    margin: 20px;
+  }
+  .skills{
+    margin-top: 10%;
+  }
+  .skills-container{
+    margin-top: 20%;
+  }
+  .skill-icon{
+    width: 70px;
+/*    width: auto;*/
+    height: 70px
+/*    padding-right: 50px;*/
+  }
+  .skill-txt{
+    font-size: 20px;
+    margin-left: 10px;
   }
   .topnav.responsive {
     position: fixed;

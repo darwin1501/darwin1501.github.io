@@ -127,7 +127,7 @@ document.getElementById("darkmode-btn").addEventListener("click", function(){
 function myFunction() {
   var x = document.getElementById("myTopnav");
 
-  var menuIcon = document.getElementsByClassName('container')
+  var menuIcon = document.getElementsByClassName('bar-container')
 
   var toggleBtn = document.getElementById('toggle-btn');
 
