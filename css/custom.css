@@ -24,6 +24,16 @@ src: local('Gilroy-Medium'), url('../font/Gilroy-Medium.woff') format('woff');
 }
 
 
+:root{
+  --blue: #30B9E7;
+  --dark-blue: #1C86A8;
+  --green: #17E983;
+  --dark-green: #09B665;
+  --orange:#FACD79;
+  --dark-orange: #DAB269;
+}
+
+
 
 /*global style*/
 body{
@@ -32,16 +42,28 @@ body{
   margin: 0;
   padding: 0;
 }
+/*colors*/
+.blue-bg{
+  background-color: var(--blue);
+}
+.orange-bg{
+  background-color: var(--orange);
+}
+.green-bg{
+  background-color: var(--green);
+}
+.dark-green-tag{
+  background-color: var(--dark-green);
+}
+.dark-orange-tag{
+  background-color: var(--dark-orange);
+}
+.dark-blue-tag{
+  background-color: var(--dark-blue)
+}
 .container{
   width: 100vw;
 }
-/*.profile-bg{
-  width: 150px;
-  height: 150px;
-  background-color: blue;
-  border-radius: 50%;
-  margin: auto;
-}*/
 .profile-container, .profile-bg{
   display: flex;
   align-items: center;
@@ -53,7 +75,8 @@ body{
   font-weight: normal;
   text-align: center;
 }
-.content-sub-title, .profile-txt, .skill-txt{
+.content-sub-title, .profile-txt, .project-details, 
+.project-title, .skill-txt, .tag-container{
   color: white;
   font-family: 'Gilroy-Regular';
   font-weight: normal;
@@ -74,7 +97,17 @@ body{
   align-items: center;
   justify-content: center;
 }
-
+/*project img box-shadows*/
+.blue-shadow{
+   box-shadow: 5px 5px 1px 2px var(--dark-blue);
+}
+.green-shadow{
+  box-shadow: 5px 5px 1px 2px var(--dark-green);
+}
+/*DAB269*/
+.orange-shadow{
+   box-shadow: 5px 5px 1px 2px var(--dark-orange);
+}
 #img_default{
 /*  transition-delay: 1s;*/
 }
