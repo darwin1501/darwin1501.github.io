@@ -42,6 +42,10 @@ body{
   margin: 0;
   padding: 0;
 }
+ul, li{
+  text-decoration: none;
+  list-style-type: none;
+}
 /*colors*/
 .blue-bg{
   background-color: var(--blue);
@@ -61,13 +65,14 @@ body{
 .dark-blue-tag{
   background-color: var(--dark-blue)
 }
+.contact-lbl, .landing-txt{
+  color: white;
+  font-family:'Gilroy-Bold';
+  font-weight:normal;
+  text-align: center;
+}
 .container{
   width: 100vw;
-}
-.profile-container, .profile-bg{
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .content-title{
   color: white;
@@ -75,8 +80,10 @@ body{
   font-weight: normal;
   text-align: center;
 }
-.content-sub-title, .profile-txt, .project-details, 
-.project-title, .skill-txt, .tag-container{
+.contact-txt, .content-sub-title,
+.link-txt, .profile-txt, 
+.project-details, .project-title, 
+.skill-txt, .tag-container{
   color: white;
   font-family: 'Gilroy-Regular';
   font-weight: normal;
@@ -86,11 +93,16 @@ body{
   position: absolute;
   z-index: 1; 
 }
-.landing-txt{
-  color: white;
-  font-family:'Gilroy-Bold';
-  font-weight:normal;
+.link-container{
   text-align: center;
+}
+.link-txt{
+  font-size: 14px;
+}
+.profile-container, .profile-bg{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .skill-list-container{
   display: flex;

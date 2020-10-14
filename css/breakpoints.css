@@ -23,6 +23,17 @@
     justify-content: flex-start;
     margin: 10px;
   }
+  .contact-lbl{
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    margin-top: 10%;
+  }
+  .contact-txt{
+    font-size: 18px;
+    text-align: center;
+    color: white;
+  }
   .container, main{
     padding-top: 55vh;
   }
@@ -49,12 +60,21 @@
     border-width: thin;
     margin: 10px auto 10px auto;
   }
+  .divider-xs{
+    width: 60vw;
+    border: 0.1px solid white;
+    border-width: thin;
+    margin: 10px auto 10px auto;
+  }
   .icon{
     margin-left: 5px;
   }
   main{
     max-width: 100%;
     margin: auto;
+  }
+  .link-container{
+  font-size: 14px;
   }
   .landing-txt{
     font-size:35px;
@@ -103,10 +123,10 @@
   }
   .project-tag-container{
     display: grid;
-    grid-gap: 20px;
+    grid-gap: 10px;
     align-items: center;
     justify-content: center;
-    grid-template-columns: repeat(auto-fill, minmax(55px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
     grid-auto-rows: 30px;
     margin: 10% auto;
     width: 80%;
