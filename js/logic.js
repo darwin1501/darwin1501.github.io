@@ -58,6 +58,8 @@ document.getElementById("darkmode-btn").addEventListener("click", function(){
 
   const imgDefault = document.getElementById('img_default');
 
+  const imgDefaultFooter = document.getElementById('img_default_footer');
+
   const topNav = document.getElementById('myTopnav');
 
   if (themeValue === 'off') {
@@ -67,7 +69,12 @@ document.getElementById("darkmode-btn").addEventListener("click", function(){
 
     imgDefault.style.transition = 'all 0.9s ease';
 
+    imgDefaultFooter.style.transition = 'all 0.9s ease';
+
+    // landing image
     imgDefault.style.opacity = 1;
+    // footer image
+    imgDefaultFooter.style.opacity = 1;
 
 
     body.classList.add('body-lht');
@@ -96,7 +103,12 @@ document.getElementById("darkmode-btn").addEventListener("click", function(){
 
     imgDefault.style.transition = 'all 0.9s ease';
 
+    imgDefaultFooter.style.transition = 'all 0.9s ease';
+
+    // landing image
     imgDefault.style.opacity = 0;
+    // footer image
+    imgDefaultFooter.style.opacity = 0;
 
 
     body.classList.add('body-drk');

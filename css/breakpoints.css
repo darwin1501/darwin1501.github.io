@@ -66,6 +66,27 @@
     border-width: thin;
     margin: 10px auto 10px auto;
   }
+  footer{
+/*    width: 100vw;
+    height: 20%;*/
+/*    display: flex;
+    align-items: center;
+    justify-content: center;*/
+  }
+  #footer-img img{
+    position: absolute;
+    width: 80%;
+    margin-top: -10%;
+    margin-left: auto;
+    margin-right: auto;
+        padding-bottom: 80px;
+/*    height: 100vh;*/
+/*    object-fit: cover;*/
+/*    top: 0;*/
+    left: 0;
+    right: 0;
+/*    bottom: 0;*/
+  }
   .icon{
     margin-left: 5px;
   }
