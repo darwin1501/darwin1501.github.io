@@ -87,6 +87,13 @@
     right: 0;
 /*    bottom: 0;*/
   }
+  .highlighted{
+   /* text-decoration: underline !important;*/
+   border-bottom: solid white 2px;
+   width: 20%;
+   margin: auto;
+
+  }
   .icon{
     margin-left: 5px;
   }
@@ -225,7 +232,7 @@
     margin-right: 20px;
   }
   .topnav.responsive{
-    height: 230px !important;
+    height: 280px !important;
   }
   
 }

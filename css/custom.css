@@ -33,7 +33,9 @@ src: local('Gilroy-Medium'), url('../font/Gilroy-Medium.woff') format('woff');
   --dark-orange: #DAB269;
 }
 
-
+/*#section1{
+  top: 0;
+}*/
 
 /*global style*/
 body{
@@ -88,6 +90,14 @@ ul, li{
   font-family: 'Gilroy-Regular';
   font-weight: normal;
   text-align: center;
+}
+/* when a link is clicked, it gets highlighted */
+.highlighted{
+ /* text-decoration: underline !important;*/
+ border-bottom: solid white 1px;
+/* transition: 0.5s;*/
+/* width: 40%;*/
+
 }
 .landing-txt-container{
   position: absolute;

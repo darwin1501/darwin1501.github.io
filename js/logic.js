@@ -1,6 +1,7 @@
 
 sessionStorage.theme = 'off'
-// hide show nav
+
+// hide show nav setting
 
 var prevScrollpos = window.scrollY;
 
@@ -48,6 +49,7 @@ window.addEventListener('scroll', () => {
 
 });
 
+// night and lightmode behavior
 document.getElementById("darkmode-btn").addEventListener("click", function(){
 
   const themeValue = this.value
@@ -95,7 +97,6 @@ document.getElementById("darkmode-btn").addEventListener("click", function(){
 
     }
     
-
   }else if (themeValue === 'on'){
 
     // night mode
@@ -126,7 +127,6 @@ document.getElementById("darkmode-btn").addEventListener("click", function(){
         topNav.classList.add('nav-bg-night');
 
         topNav.classList.remove('nav-bg-light');
-
     }
   };
 
@@ -135,7 +135,7 @@ document.getElementById("darkmode-btn").addEventListener("click", function(){
   console.log(sessionStorage.theme);
 })
 
-//
+// navigation behavior
 function myFunction() {
   var x = document.getElementById("myTopnav");
 
@@ -146,7 +146,6 @@ function myFunction() {
   // nav.classList.toggle('nav-bg-i');
 
   console.log(window.scrollY);
-
 
   toggleBtn.classList.toggle('toggle-hide');
 
@@ -222,3 +221,45 @@ function myFunction() {
           }
       }
 }
+
+
+// scrolling navigation setting
+document.addEventListener("DOMContentLoaded", () => {
+  //  little hack to detect if the user is on ie 11
+  const isIE11 = !!window.MSInputMethodContext && !!document.documentMode;
+  // get all the links with an ID that starts with 'sectionLink'
+  const listOfLinks = document.querySelectorAll("a[href^='#sectionLink");
+  // loop over all the links
+  listOfLinks.forEach(function (link) {
+    // listen for a click
+    link.addEventListener('click',  () => {
+      // toggle highlight on and off when we click a link
+      listOfLinks.forEach( (link) => {
+        if (link.classList.contains('highlighted')) {
+          link.classList.remove('highlighted');
+        }
+      });
+      link.classList.add('highlighted');
+      // get the element where to scroll
+      let ref = link.href.split('#sectionLink');
+      ref = "#section" + ref[1];
+      // ie 11 does not support smooth scroll, so we will simply scroll
+      if (isIE11) {
+        window.scrollTo(0, document.querySelector(ref).offsetTop);
+      } else {
+        // close the navigation for mobile devices
+        const icon = document.getElementsByClassName('icon');
+
+        icon[0].click()
+
+        // scroll page
+        window.scroll({
+          behavior: 'smooth',
+          left: 0,
+          // top gets the distance from the top of the page of our target element
+          top: document.querySelector(ref).offsetTop
+        });
+      }
+    })
+  })
+})
