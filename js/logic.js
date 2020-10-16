@@ -145,7 +145,7 @@ function myFunction() {
 
   // nav.classList.toggle('nav-bg-i');
 
-  console.log(window.scrollY);
+  // console.log(window.scrollY);
 
   toggleBtn.classList.toggle('toggle-hide');
 
@@ -247,11 +247,19 @@ document.addEventListener("DOMContentLoaded", () => {
       if (isIE11) {
         window.scrollTo(0, document.querySelector(ref).offsetTop);
       } else {
-        // close the navigation for mobile devices
-        const icon = document.getElementsByClassName('icon');
 
-        icon[0].click()
+            const deviceWidth = window.innerWidth;
 
+            if(deviceWidth > 600){
+
+            }else{
+          // close the navigation for mobile devices
+
+              const icon = document.getElementsByClassName('icon');
+
+              icon[0].click()
+
+            }
         // scroll page
         window.scroll({
           behavior: 'smooth',
