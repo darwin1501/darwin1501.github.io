@@ -57,7 +57,7 @@
     padding: 10px 0 10px 0;*/
   }
   .divider-sm{
-    width: 75vw;
+    width: 60vw;
     border: 0.1px solid white;
     border-width: thin;
     margin: 10px auto 10px auto;
@@ -106,8 +106,9 @@
   font-size: 14px;
   }
   .landing-txt{
-    font-size:35px;
+    font-size:1.5em;
     margin: 25% 10%;
+    text-align: center;
   }
   .profile-img{
     width: 100px;
@@ -117,12 +118,11 @@
     margin-left: auto;
     margin-right: auto;
     object-fit: cover;
-    background-color: #b0e1f7;
   /*position: absolute;*/
   }
   .project-container{
     border-radius: 5px;
-    width: 80%;
+    width: 70%;
     height: auto;
     margin: 10% auto;
     padding: 20px 10px 20px 10px;
@@ -132,6 +132,7 @@
     text-align: justify;
     margin-left: 5%;
     margin-right: 5%;
+    text-indent: 50px;
   }
   .project-details-container{
     margin-top: 10%;
@@ -246,14 +247,23 @@
 }
 
 @media screen and (min-width: 601px) {
-/*  a, .hightlighted{
-      transition: 0.5s;
-  }*/
+  .content-group{
+    margin: 10% 0 10% 0;
+  }
     .highlighted{
    /* text-decoration: underline !important;*/
    border-bottom: solid white 2px;
    width: 10%;
   /*   margin: auto;*/
+  }
+  .landing-txt-container{
+    margin-top: 5%;
+  }
+  .landing-txt{
+    font-size: 2.5em;
+  }
+  .project-container{
+    width: 60%;
   }
   .profile-txt-container{
     width: 90%;

@@ -31,6 +31,10 @@ src: local('Gilroy-Medium'), url('../font/Gilroy-Medium.woff') format('woff');
   --dark-green: #09B665;
   --orange:#FACD79;
   --dark-orange: #DAB269;
+  --light-shadow: #007399;
+  --night-shadow: #022e39;
+  --profile-light: #b0e1f7;
+  --profile-night: #7134bb;
 }
 
 /*#section1{
@@ -102,6 +106,7 @@ ul, li{
 .landing-txt-container{
   position: absolute;
   z-index: 1; 
+  width: 100%;
 }
 .link-container{
   text-align: center;
@@ -114,10 +119,27 @@ ul, li{
   align-items: center;
   justify-content: center;
 }
+.profile-img, .project-container{
+  transition: 0.5s;
+}
+.profile-light{
+  background-color: var(--profile-light);
+}
+.profile-night{
+  background-color: var(--profile-night);
+}
 .skill-list-container{
   display: flex;
   align-items: center;
   justify-content: center;
+}
+/*project main shadow*/
+.light-shadow{
+ /* #007399*/
+ box-shadow: 5px 5px 1px 2px var(--light-shadow);
+}
+.night-shadow{
+ box-shadow: 5px 5px 1px 2px var(--night-shadow); 
 }
 /*project img box-shadows*/
 .blue-shadow{

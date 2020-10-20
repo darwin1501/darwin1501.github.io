@@ -1,7 +1,8 @@
 
 sessionStorage.theme = 'off'
 
-// hide show nav setting
+// hide or show nav when scroll
+// change nav that will hide based on theme
 
 var prevScrollpos = window.scrollY;
 
@@ -54,7 +55,7 @@ document.getElementById("darkmode-btn").addEventListener("click", function(){
 
   const themeValue = this.value
 
-  // elements to be change
+  // elements that needs to be change
 
   const body = document.querySelector('body');
 
@@ -64,9 +65,14 @@ document.getElementById("darkmode-btn").addEventListener("click", function(){
 
   const topNav = document.getElementById('myTopnav');
 
+  const profileImage = document.getElementById('profile-img');
+
+  const projectContainer = document.getElementsByClassName('project-container');
+
+
+  //light mode
   if (themeValue === 'off') {
 
-    //light mode
     document.getElementById("darkmode-btn").value = 'on';
 
     imgDefault.style.transition = 'all 0.9s ease';
@@ -83,6 +89,20 @@ document.getElementById("darkmode-btn").addEventListener("click", function(){
 
     body.classList.remove('body-drk');
 
+
+    for (let element = 0; element < projectContainer.length; element++) {
+
+      projectContainer[element].classList.add('light-shadow');
+
+      projectContainer[element].classList.remove('night-shadow');
+
+    };
+
+    profileImage.classList.add('profile-light');
+
+    profileImage.classList.remove('profile-night');
+
+
     if(window.scrollY === 0){
 
         topNav.classList.remove('nav-bg-night');
@@ -96,10 +116,9 @@ document.getElementById("darkmode-btn").addEventListener("click", function(){
         topNav.classList.remove('nav-bg-night');
 
     }
-    
+  // night mode
   }else if (themeValue === 'on'){
 
-    // night mode
     document.getElementById("darkmode-btn").value = 'off';
 
     imgDefault.style.transition = 'all 0.9s ease';
@@ -115,6 +134,20 @@ document.getElementById("darkmode-btn").addEventListener("click", function(){
     body.classList.add('body-drk');
 
     body.classList.remove('body-lht');
+
+
+    for (let element = 0; element < projectContainer.length; element++) {
+
+      projectContainer[element].classList.add('night-shadow');
+
+      projectContainer[element].classList.remove('light-shadow');
+
+    };
+
+    profileImage.classList.add('profile-night');
+
+    profileImage.classList.remove('profile-light');
+
 
     if(window.scrollY === 0){
 
