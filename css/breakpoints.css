@@ -49,7 +49,7 @@
     font-size: 18px;
   }
   .divider{
-    width: 90vw;
+    width: 90%;
     border: 1px solid white;
     margin: 10px auto 10px auto;
   /*  border-left; none;*/
@@ -57,7 +57,7 @@
     padding: 10px 0 10px 0;*/
   }
   .divider-sm{
-    width: 60vw;
+    width: 60%;
     border: 0.1px solid white;
     border-width: thin;
     margin: 10px auto 10px auto;
@@ -162,7 +162,7 @@
     width: 80%;
   }
   .project-title{
-    font-size: 18px;
+    font-size: 1.2em;
     text-decoration: underline;
   }
   .profile-txt{
@@ -247,23 +247,38 @@
 }
 
 @media screen and (min-width: 601px) {
+  .contact{
+/*    margin-top: 50%;*/
+  }
   .content-group{
     margin: 10% 0 10% 0;
   }
-    .highlighted{
+   #footer-img img{
+    position: absolute;
+    width: 50%;
+    margin-top: -5%;
+    margin-left: auto;
+    margin-right: auto;
+
+    left: 0;
+    right: 0;
+/*    bottom: 0;*/
+  }
+  .highlighted{
    /* text-decoration: underline !important;*/
    border-bottom: solid white 2px;
    width: 10%;
   /*   margin: auto;*/
   }
-  .landing-txt-container{
-    margin-top: 5%;
-  }
   .landing-txt{
-    font-size: 2.5em;
+    font-size: 3em;
+    margin: 15%;
   }
   .project-container{
     width: 60%;
+  }
+  .project-title{
+    font-size: 1.5em;
   }
   .profile-txt-container{
     width: 90%;
@@ -296,10 +311,53 @@
 }
 
 @media screen and (min-width: 700px){
+  .profile-container{
+    margin-top: 5%;
+  }
   .skills-part-two{
     display: grid;
     grid-template: repeat(2, 100px)/ repeat(2, 1fr);
     grid-gap: 10px;
   }
+}
 
+@media screen and (min-width: 800px){
+  .about{
+    margin-bottom: 20%;
+  }
+  .combine{
+    display: flex;
+  }
+  #footer-img img{
+    margin-top: -2%;
+  }
+  .nav-container{
+    margin-left: 25%;
+  }
+  .profile-txt{
+    font-size: 1.1em;
+  }
+  .project-container{
+    width: 80%;
+  }
+  .project-content{
+    margin: 0 2% 0 2%;
+  }
+  .project-details-container{
+      order: -1;
+  }
+  .project-tag-container{
+    margin: 2% auto 5% 2%;
+  }
+}
+
+@media screen and (min-width: 1000px){
+  main{
+    max-width: 900px;
+    margin: auto;
+  }
+  .landing-txt{
+    font-size: 3em;
+    margin-top: 10%;
+  }
 }

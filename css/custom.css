@@ -78,7 +78,7 @@ ul, li{
   text-align: center;
 }
 .container{
-  width: 100vw;
+  width: 100%;
 }
 .content-title{
   color: white;
@@ -188,7 +188,7 @@ ul, li{
   bottom: 0;
 }
 .nav-bg-light{
-  background: #99d6f2;
+  background: #6bc1e7;
   height: 70px;
 }
 .nav-bg-night{
