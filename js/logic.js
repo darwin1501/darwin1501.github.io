@@ -47,7 +47,7 @@ window.addEventListener('scroll', () => {
 
   prevScrollpos = currentScrollPos;
 
-  console.log(currentScrollPos);
+  // console.log(currentScrollPos);
 
   const home = document.getElementById('home');
 
@@ -57,22 +57,82 @@ window.addEventListener('scroll', () => {
 
   const projects = document.getElementById('projects');
 
-  const contact = document.getElementById('contact')
+  const contact = document.getElementById('contact');
+
+  //change the active navigation based on the scroll
 
   if (currentScrollPos === 0){
+
+    // home 
 
     home.classList.add('highlighted');
 
     about.classList.remove('highlighted');
 
-  }else if(currentScrollPos > 600){
+    skills.classList.remove('highlighted');
 
-    home.classList.remove('highlighted');
+    projects.classList.remove('highlighted');
+
+    contact.classList.remove('highlighted');
+
+  }else if(currentScrollPos > 600 && currentScrollPos <= 869){
+
+    // about
 
     about.classList.add('highlighted');
 
-  };
+    home.classList.remove('highlighted');
 
+    skills.classList.remove('highlighted');
+
+    projects.classList.remove('highlighted');
+
+    contact.classList.remove('highlighted');
+
+  }else if(currentScrollPos > 869 && currentScrollPos <= 1784){
+
+    // skills
+
+    skills.classList.add('highlighted');
+
+    home.classList.remove('highlighted');
+
+    about.classList.remove('highlighted');
+
+    projects.classList.remove('highlighted');
+
+    contact.classList.remove('highlighted');
+
+  }else if(currentScrollPos > 1784 && currentScrollPos <= 4488){
+
+    // projects
+
+    projects.classList.add('highlighted');
+
+    home.classList.remove('highlighted');
+
+    about.classList.remove('highlighted');
+
+    skills.classList.remove('highlighted');
+
+    contact.classList.remove('highlighted');
+
+  }else if(currentScrollPos > 4488){
+
+    // contact
+
+    contact.classList.add('highlighted');
+
+    home.classList.remove('highlighted');
+
+    about.classList.remove('highlighted');
+
+    skills.classList.remove('highlighted');
+
+    projects.classList.remove('highlighted');
+
+
+  }
 });
 
 // night and lightmode behavior

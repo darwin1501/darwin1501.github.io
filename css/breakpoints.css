@@ -18,7 +18,7 @@
   }
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 240px) {
   .box{
     display: flex;
     align-items: center;
@@ -198,7 +198,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    margin: auto auto auto 70%;
+    margin: auto auto auto 63%;
     width: 0%;
     content: '.';
     color: transparent;
@@ -210,7 +210,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    margin: auto auto auto 70%;
+    margin: auto auto auto 63%;
     width: 30%;
     content: '.';
     color: transparent;
@@ -273,6 +273,14 @@
   }
   .topnav.responsive{
     height: 280px !important;
+  }
+}
+@media screen and (min-width: 320px){
+    .topnav > .navlink:after{
+      margin: auto auto auto 70%;
+  }
+  .topnav > .highlighted:after{
+      margin: auto auto auto 70%;
   }
 }
 @media screen and (min-width: 370px){
@@ -460,8 +468,11 @@
 }
 
 @media screen and (min-width: 1037px){
+  .project{
+    padding-bottom: 5%;
+  }
   #landing-img img{
-    height: 120vh;
+    height: 119vh;
     margin-bottom: 20%;
     z-index: -1;
   }

@@ -112,6 +112,7 @@ ul, li{
   text-align: center;
 }
 .link-txt{
+  cursor: pointer;
   font-size: 14px;
   text-decoration: underline;
 }
