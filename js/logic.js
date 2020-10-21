@@ -36,7 +36,6 @@ window.addEventListener('scroll', () => {
     }
 
 }
-
   //previuos > current scroll
   if (prevScrollpos > currentScrollPos) {
     //show
@@ -47,6 +46,32 @@ window.addEventListener('scroll', () => {
 }
 
   prevScrollpos = currentScrollPos;
+
+  console.log(currentScrollPos);
+
+  const home = document.getElementById('home');
+
+  const about = document.getElementById('about');
+
+  const skills = document.getElementById('skills');
+
+  const projects = document.getElementById('projects');
+
+  const contact = document.getElementById('contact')
+
+  if (currentScrollPos === 0){
+
+    home.classList.add('highlighted');
+
+    about.classList.remove('highlighted');
+
+  }else if(currentScrollPos > 600){
+
+    home.classList.remove('highlighted');
+
+    about.classList.add('highlighted');
+
+  };
 
 });
 

@@ -98,7 +98,7 @@ ul, li{
 /* when a link is clicked, it gets highlighted */
 .highlighted{
  /* text-decoration: underline !important;*/
- border-bottom: solid white 1px;
+ /*border-bottom: solid white 1px;*/
 /* transition: 0.5s;*/
 /* width: 40%;*/
 
@@ -113,6 +113,7 @@ ul, li{
 }
 .link-txt{
   font-size: 14px;
+  text-decoration: underline;
 }
 .profile-container, .profile-bg{
   display: flex;
