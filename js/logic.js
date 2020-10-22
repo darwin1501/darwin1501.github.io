@@ -75,7 +75,7 @@ window.addEventListener('scroll', () => {
 
     contact.classList.remove('highlighted');
 
-  }else if(currentScrollPos > 600 && currentScrollPos <= 869){
+  }else if(currentScrollPos > 600 && currentScrollPos <= 800){
 
     // about
 
@@ -89,7 +89,7 @@ window.addEventListener('scroll', () => {
 
     contact.classList.remove('highlighted');
 
-  }else if(currentScrollPos > 869 && currentScrollPos <= 1784){
+  }else if(currentScrollPos > 800 && currentScrollPos <= 1784){
 
     // skills
 
