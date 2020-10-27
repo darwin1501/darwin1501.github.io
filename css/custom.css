@@ -130,6 +130,9 @@ ul, li{
 .profile-night{
   background-color: var(--profile-night);
 }
+.project-container{
+  cursor: pointer;
+}
 .skill-list-container{
   display: flex;
   align-items: center;
