@@ -448,6 +448,16 @@
   }
   .project-details-container{
       order: -1;
+    flex: 5 1 55%;
+  }
+  .project-img-container{
+       flex: 1 5 45%;
+   display: flex;
+   justify-content: center;
+   align-items: center
+  }
+  .project-img{
+    /*width: 20%;*/
   }
   .project-tag-container{
     margin: 2% auto 5% 2%;
