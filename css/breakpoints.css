@@ -156,8 +156,8 @@
     grid-gap: 10px;
     align-items: center;
     justify-content: center;
-    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
-    grid-auto-rows: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    grid-auto-rows: 40px;
     margin: 10% auto;
     width: 80%;
   }
@@ -282,7 +282,7 @@
     .topnav > .navlink:after{
       margin: auto auto auto 70%;
   }
-  }
+  
   .topnav > .highlighted:after{
       margin: auto auto auto 70%;
   }
