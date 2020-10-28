@@ -163,7 +163,7 @@
   }
   .project-title{
     font-size: 1.2em;
-    text-decoration: underline;
+    text-decoration: underline !important;
   }
   .profile-txt{
     font-size: 14px;

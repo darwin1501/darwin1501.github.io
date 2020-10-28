@@ -133,6 +133,9 @@ ul, li{
 .project-container{
   cursor: pointer;
 }
+.project-link{
+  text-decoration: none;
+}
 .skill-list-container{
   display: flex;
   align-items: center;
