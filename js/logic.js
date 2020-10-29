@@ -250,7 +250,7 @@ document.getElementById("darkmode-btn").addEventListener("click", function(){
 
   sessionStorage.theme = themeValue;
 
-  console.log(sessionStorage.theme);
+  // console.log(sessionStorage.theme);
 })
 
 // navigation behavior
