@@ -27,8 +27,8 @@ src: local('Gilroy-Medium'), url('../font/Gilroy-Medium.woff') format('woff');
 :root{
   --blue: #30B9E7;
   --dark-blue: #1C86A8;
-  --green: #17E983;
-  --dark-green: #09B665;
+  --green: #16D98B;
+  --dark-green: #12B372;
   --orange:#FACD79;
   --dark-orange: #DAB269;
   --light-shadow: #007399;
