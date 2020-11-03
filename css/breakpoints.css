@@ -49,24 +49,33 @@
     font-size: 18px;
   }
   .divider{
+    background-color: white;
+    border: none;
+    height: 1px;
     width: 90%;
-    border: 1px solid white;
-    margin: 10px auto 10px auto;
+    /*border: 1px solid white;
+    margin: 10px auto 10px auto;*/
   /*  border-left; none;*/
   /*  margin: auto;
     padding: 10px 0 10px 0;*/
   }
   .divider-sm{
+    background-color: white;
+    border: none;
+    height: 1px;
     width: 60%;
-    border: 0.1px solid white;
-    border-width: thin;
+    /*border: 0.1px solid white;
+    border-width: thin;*/
     margin: 10px auto 10px auto;
   }
   .divider-xs{
-    width: 50%;
-    border: 0.1px solid white;
-    border-width: thin;
+    background-color: white;
+    border: none;
+    /*border: 0.1px solid white;
+    border-width: thin;*/
     margin: 10px auto 10px auto;
+    height: 1px;
+    width: 50%;
   }
   footer{
 /*    width: 100vw;
@@ -472,12 +481,22 @@
     width: 5%;
   }*/
   main{
-    max-width: 900px;
+    max-width: 1300px;
     margin: auto;
   }
   .landing-txt{
     font-size: 3em;
     margin-top: 10%;
+  }
+  .project-details{
+    font-size: 1.2em;
+  }
+  .project-title{
+    font-size: 2em;
+  }
+  .profile-txt{
+    max-width: 800px;
+    margin: 30px auto;
   }
 }
 
@@ -486,6 +505,7 @@
     padding-bottom: 5%;
   }
   #landing-img img{
+/*    border: none;*/
     height: 119vh;
     margin-bottom: 20%;
     z-index: -1;

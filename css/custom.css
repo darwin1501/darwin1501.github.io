@@ -126,9 +126,11 @@ ul, li{
 }
 .profile-light{
   background-color: var(--profile-light);
+  border: solid var(--profile-light) 2px;
 }
 .profile-night{
   background-color: var(--profile-night);
+  border: solid var(--profile-night) 2px;
 }
 .project-container{
   cursor: pointer;
@@ -321,7 +323,8 @@ input:checked + .slider:before {
 /*light mode/ night mode style*/
 
 /*transitions*/
-body{
+body, .project-container, .project-img-container,
+.tag-container{
   transition: 0.9s;
 }
 
@@ -336,5 +339,32 @@ body{
 
 .body-drk{
   background-color: #003b4f !important;
+}
+.blue-border, .dark-blue-border, .green-border, .dark-green-border,
+ .orange-border, .dark-orange-border{
+  box-shadow: none !important;
+  background-color: #003B4F !important;
+}
+.blue-border, .img-blue-border{
+  border: solid var(--blue) 4px !important;
+}
+.dark-blue-border{
+  border: solid var(--blue) 2px !important;
+}
+.green-border, .img-green-border{
+  border: solid var(--green) 4px !important;
+}
+.dark-green-border{
+  border: solid var(--green) 2px !important;
+}
+.orange-border, .img-orange-border{
+  border: solid var(--orange) 4px !important;
+}
+.dark-orange-border{
+  border: solid var(--orange) 2px !important;
+}
+.img-blue-border, .img-green-border, .img-orange-border{
+  box-shadow: none !important;
+  border-radius: 5px;
 }
 

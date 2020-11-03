@@ -154,6 +154,90 @@ document.getElementById("darkmode-btn").addEventListener("click", function(){
 
   const projectContainer = document.getElementsByClassName('project-container');
 
+  const blueShadow = document.getElementsByClassName('blue-shadow');
+
+  const blueBg = document.getElementsByClassName('blue-bg');
+
+  const darkBlueTag = document.getElementsByClassName('dark-blue-tag');
+
+  const greenShadow = document.getElementsByClassName('green-shadow');
+
+  const greenBg = document.getElementsByClassName('green-bg');
+
+  const darkGreenTag = document.getElementsByClassName('dark-green-tag');
+
+  const orangeShadow = document.getElementsByClassName('orange-shadow');
+
+  const orangeBg = document.getElementsByClassName('orange-bg');
+
+  const darkOrangeTag = document.getElementsByClassName('dark-orange-tag');
+
+
+  // the easy way to add/remove class
+
+  //shadow around image
+  for (let blueShadowCount = 0; blueShadowCount < blueShadow.length; blueShadowCount++) {
+
+    blueShadow[blueShadowCount ].classList.toggle('img-blue-border');
+
+  };
+
+  for (let blueBgCount = 0; blueBgCount < blueBg.length; blueBgCount++) {
+
+    blueBg[blueBgCount].classList.toggle('blue-border');
+
+  };
+
+  for (let darkBlueTagCount = 0; darkBlueTagCount < darkBlueTag.length; darkBlueTagCount++) {
+
+    darkBlueTag[darkBlueTagCount].classList.toggle('dark-blue-border');
+
+  };
+
+
+  // shadow around image
+  for (let orangeShadowCount = 0; orangeShadowCount < orangeShadow.length; orangeShadowCount++) {
+
+    orangeShadow[orangeShadowCount].classList.toggle('img-orange-border');
+
+  };
+
+  for (let orangeBgCount = 0; orangeBgCount < orangeBg.length; orangeBgCount++) {
+
+    orangeBg[orangeBgCount].classList.toggle('orange-border');
+
+  };
+
+  for (let darkOrangeTagCount = 0; darkOrangeTagCount < darkOrangeTag.length; darkOrangeTagCount++) {
+
+    darkOrangeTag[darkOrangeTagCount].classList.toggle('dark-orange-border');
+
+  };
+
+
+  // shadow around image
+  for (let greenShadowCount = 0; greenShadowCount < greenShadow.length; greenShadowCount++) {
+
+    greenShadow[greenShadowCount].classList.toggle('img-green-border');
+
+  };
+
+  for (let greenBgCount = 0; greenBgCount < greenBg.length; greenBgCount++) {
+
+    greenBg[greenBgCount].classList.toggle('green-border');
+
+  };
+
+  for (let darkGreenTagCount = 0; darkGreenTagCount < darkGreenTag.length; darkGreenTagCount++) {
+
+    darkGreenTag[darkGreenTagCount].classList.toggle('dark-green-border');
+
+  };
+
+
+
+
+  //the hard way to add/remove class
 
   //light mode
   if (themeValue === 'off') {
@@ -173,7 +257,6 @@ document.getElementById("darkmode-btn").addEventListener("click", function(){
     body.classList.add('body-lht');
 
     body.classList.remove('body-drk');
-
 
     for (let element = 0; element < projectContainer.length; element++) {
 
