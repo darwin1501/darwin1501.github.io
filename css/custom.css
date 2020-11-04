@@ -148,7 +148,7 @@ ul, li{
 .light-shadow{
  /* #007399*/
 /* box-shadow: 5px 5px 1px 2px var(--light-shadow);*/
-
+ transition: .5s ease !important;
  box-shadow: 0 3px 6px rgba(0,38,51,0.16), 0 3px 6px rgba(0,38,51,0.23);
 }
 .light-shadow:hover{
