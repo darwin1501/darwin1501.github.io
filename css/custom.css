@@ -147,7 +147,13 @@ ul, li{
 /*project main shadow*/
 .light-shadow{
  /* #007399*/
- box-shadow: 5px 5px 1px 2px var(--light-shadow);
+/* box-shadow: 5px 5px 1px 2px var(--light-shadow);*/
+
+ box-shadow: 0 3px 6px rgba(0,38,51,0.16), 0 3px 6px rgba(0,38,51,0.23);
+}
+.light-shadow:hover{
+  box-shadow: 0 14px 28px rgba(0,38,51,0.50), 0 3px 6px rgba(0,38,51,0.44);
+/*  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);*/
 }
 .night-shadow{
  box-shadow: 5px 5px 1px 2px var(--night-shadow); 
@@ -155,6 +161,7 @@ ul, li{
 /*project img box-shadows*/
 .blue-shadow{
    box-shadow: 5px 5px 1px 2px var(--dark-blue);
+   /*box-shadow: 0 3px 6px rgba(0,38,51,0.16), 0 3px 6px rgba(0,38,51,0.23);*/
 }
 .green-shadow{
   box-shadow: 5px 5px 1px 2px var(--dark-green);
@@ -345,8 +352,14 @@ body, .project-container, .project-img-container,
   box-shadow: none !important;
   background-color: #003B4F !important;
 }
+.blue-border, .green-border, .orange-border{
+  transition: .5s ease !important;
+}
 .blue-border, .img-blue-border{
-  border: solid var(--blue) 4px !important;
+  border: solid  var(--blue) 2px !important;
+}
+.blue-border:hover{
+  border: solid var(--blue) 8px !important;
 }
 .dark-blue-border{
   border: solid var(--blue) 2px !important;
@@ -354,11 +367,17 @@ body, .project-container, .project-img-container,
 .green-border, .img-green-border{
   border: solid var(--green) 4px !important;
 }
+.green-border:hover{
+  border: solid var(--green) 8px !important;
+}
 .dark-green-border{
   border: solid var(--green) 2px !important;
 }
 .orange-border, .img-orange-border{
   border: solid var(--orange) 4px !important;
+}
+.orange-border:hover{
+  border: solid var(--orange) 8px !important;
 }
 .dark-orange-border{
   border: solid var(--orange) 2px !important;
