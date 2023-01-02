@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Darwin Pablo</title>
 	<meta charset="utf-8">
@@ -8,393 +9,242 @@
 	<link rel="stylesheet" type="text/css" href="css/custom.css">
 	<link rel="stylesheet" type="text/css" href="css/breakpoints.css">
 </head>
-<body>
-<div id="landing-img">
-	<div class="nav-container">
-		<div class="topnav" id="myTopnav">
-			  <a href="#sectionLink1" class="home navlink" id="home">Home</a>
-			  <a href="#sectionLink2" class=" navlink" id="about">About</a>
-			  <a href="#sectionLink3" class="navlink" id="skills">Skills</a>
-			  <a href="#sectionLink4" class="navlink" id="projects">Projects</a>
-			  <a href="#sectionLink5" class="navlink" id="contact">Contact</a>
-			  <a href="https://drive.google.com/file/d/1_P_uII3U1M2GvrMt0vcAfBEfHqu5nWIq/view?usp=sharing" target="_blank" class="navlink" id="contact">Resume</a>
 
-			  <div class="toogle-btn-container" id="toggle-btn">
-		        <label class="switch">
-		            <input type="checkbox" id="darkmode-btn" value="on">
-		            <span class="slider round"></span>
-		        </label>
-	    	</div>
-			  <a href="javascript:void(0);" class="icon bar-container" id="icon" onclick="myFunction()">
-			      <div class="bar1"></div>
-			      <div class="bar2"></div>
-			      <div class="bar3"></div>
-			  </a>
+<body>
+	<div id="landing-img">
+		<div class="nav-container">
+			<div class="topnav" id="myTopnav">
+				<a href="#sectionLink1" class="home navlink" id="home">Home</a>
+				<a href="#sectionLink2" class=" navlink" id="about">About</a>
+				<a href="#sectionLink4" class="navlink" id="projects">Projects</a>
+				<a href="#sectionLink5" class="navlink" id="contact">Contact</a>
+				<a href="https://drive.google.com/file/d/1CAbUuoDwospDTauBwGYpPqsY-APiIkI9/view?usp=sharing"
+					target="_blank" class="navlink" id="contact">Resume</a>
+
+				<div class="toogle-btn-container" id="toggle-btn">
+					<label class="switch">
+						<input type="checkbox" id="darkmode-btn" value="on">
+						<span class="slider round"></span>
+					</label>
+				</div>
+				<a href="javascript:void(0);" class="icon bar-container" id="icon" onclick="myFunction()">
+					<div class="bar1"></div>
+					<div class="bar2"></div>
+					<div class="bar3"></div>
+				</a>
+			</div>
 		</div>
+		<div class="landing-txt-container">
+			<h1 class="landing-txt" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300">
+				I Build Websites to Help Myself and The Others.
+			</h1>
+		</div>
+		<img src="img/svg/bg_night.svg">
+		<img id="img_default" src="img/svg/bg_light.svg">
 	</div>
-	<div class="landing-txt-container">
-		<h1 class="landing-txt" data-aos="fade-up"
-     	data-aos-duration="2000" 	data-aos-delay="300">
-			I Build Website to Help Myself and The Others. 
-		</h1>
-	</div>
-	<img src="img/svg/bg_night.svg">
-  	<img id="img_default" src="img/svg/bg_light.svg">
-</div>
-<div class="container" id="section1">
-	<main>
-		<!-- about -->
-		<div class="content-group about" id="section2">
-			<h2 class="content-title" data-aos="fade-up" data-aos-duration="1000">About</h2>
-			<hr class="divider" data-aos="fade-up" data-aos-duration="1000"></hr>
-			<div class="profile-container">
-				<div class="profile-bg" data-aos="fade-up" data-aos-duration="1000">
-					<img class="profile-img profile-light" id="profile-img" src="img/png/profile_resized.png" alt="Avatar">
+	<div class="container" id="section1">
+		<main>
+			<!-- about -->
+			<div class="content-group about" id="section2">
+				<h2 class="content-title" data-aos="fade-up" data-aos-duration="1000">About</h2>
+				<hr class="divider" data-aos="fade-up" data-aos-duration="1000">
+				</hr>
+				<div class="profile-container">
+					<div class="profile-bg" data-aos="fade-up" data-aos-duration="1000">
+						<img class="profile-img profile-light" id="profile-img" src="img/png/profile_resized.png"
+							alt="Avatar">
+					</div>
+				</div>
+				<div class="profile-txt-container" data-aos="fade-up" data-aos-duration="1000">
+					<h3 class="profile-txt">
+						I am Darwin Cacho Pablo, a Computer Science graduate who loves to create side projects that will
+						help to improve my skills, and to provide useful informations to the people in the internet.
+						Sometimes I spent my free time in improving my creativity by creating arts, and solving puzzle
+						games.
+					</h3>
 				</div>
 			</div>
-			<div class="profile-txt-container" data-aos="fade-up" data-aos-duration="1000">
-				<h3 class="profile-txt">
-					I am Darwin Cacho Pablo, a Computer Science graduate who loves to create side projects that will help to improve my skills, and to provide useful informations to the people in the internet. Sometimes I spent my free time in improving my creativity by creating arts, and solving puzzle games.
-				</h3>
-			</div>
-		</div>
-		<!-- my skills -->
-		<div class="content-group" id="section3">
-			<h2 class="content-title" data-aos="fade-up" data-aos-duration="1000">My Skills</h2>
-			<hr class="divider" data-aos="fade-up" data-aos-duration="1000"></hr>
-			<div class="skills-container">
-				<!-- part 1 -->
-				<div class="skills-sub-container ">
-					<h2 class="content-sub-title" data-aos="fade-up" data-aos-duration="1000">Web Technologies Stack</h2>
-					<hr class="divider-sm" data-aos="fade-up" data-aos-duration="1000"></hr>
-					<div class="skill-list-container">
-						<div class="skills skills-part-one">
-							<!-- skill -->
-							<div class="box" data-aos="fade-up" data-aos-duration="1000" delay="500">
-								<img class="skill-icon html-icon" src="img/svg/html.svg" alt="html">
-								<h2 class="skill-txt">HTML</h2>
+			<!-- my  projects-->
+			<div class="content-group project" id="section4">
+				<h2 class="content-title" data-aos="fade-up" data-aos-duration="1000">My Projects</h2>
+				<hr class="divider" data-aos="fade-up" data-aos-duration="1000">
+				</hr>
+				<p class="project-guide-tips">Tap or Click each card/project to view demo / or source code</p>
+				<div class="projects-list-container">			
+					<!-- project -->
+					<a href="https://covid19vaccines.vercel.app"
+					class="project-link" target="_blank">
+					<div class="project-container blue-bg light-shadow" data-aos="fade-up" data-aos-duration="1000"
+						data-aos-delay="500">
+						<div class="project-content">
+							<div class="combine">
+								<div class="project-img-container">
+									<img class="project-img" src="img/png/covid19_vaccines.png"
+										alt="student messenger">
+								</div>
+								<div class="project-details-container">
+									<h2 class="project-title text-dark-blue">
+										Covid19 Vaccines
+									</h2>
+									<h3 class="project-details text-dark-blue">
+										A website that lists all possible CoVid19 Vaccines.
+									</h3>
+								</div>
 							</div>
-							<!-- skill -->
-							<div class="box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
-								<img class="skill-icon css-icon" src="img/svg/css.svg" alt="html">
-								<h2 class="skill-txt">CSS</h2>
-							</div>
-							<!-- skill -->
-							<div class="box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
-								<img class="skill-icon js-icon" src="img/svg/js.svg" alt="html">
-								<h2 class="skill-txt">JavaScript</h2>
-							</div>
-							<!-- skill -->
-							<div class="box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
-								<img class="skill-icon php-icon" src="img/svg/php.svg" alt="html">
-								<h2 class="skill-txt">PHP</h2>
-							</div>
-							<!-- skill -->
-							<div class="box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
-								<img class="skill-icon sql-icon" src="img/svg/sql.svg" alt="html">
-								<h2 class="skill-txt">MySQL</h2>
-							</div>
-							<!-- skill -->
-							<div class="box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
-								<img class="skill-icon git-icon" src="img/svg/git.svg" alt="html">
-								<h2 class="skill-txt">Git</h2>
-							</div>
-							<!-- skill -->
-							<div class="box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
-								<img class="skill-icon git-icon" src="img/svg/figma.svg" alt="html">
-								<h2 class="skill-txt">Figma</h2>
-							</div>
-							<!-- skill -->
-							<div class="box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
-								<img class="skill-icon git-icon" src="img/svg/laravel.svg" alt="html">
-								<h2 class="skill-txt">Laravel</h2>
-							</div>
-							<!-- skill -->
-							<div class="box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
-								<img class="skill-icon git-icon" src="img/svg/tailwind_css.svg" alt="html">
-								<h2 class="skill-txt">Tailwind CSS</h2>
+							<div class="project-tag-container">
+								<div class="tag-container dark-blue-tag js-tag">
+									React JS
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<!-- part 2 -->
-				<div class="skills-sub-container">
-					<h2 class="content-sub-title" data-aos="fade-up" data-aos-duration="1000" delay="500">Graphic Designing Tools</h2>
-					<hr class="divider-sm" data-aos="fade-up" data-aos-duration="1000"></hr>
-				<div class="skill-list-container">
-					<div class="skills skills-part-two">
-						<!-- skill -->
-						<div class="box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
-							<img class="skill-icon html-icon" src="img/svg/ps.svg" alt="html">
-							<h2 class="skill-txt">Adobe Photoshop</h2>
+					</a>
+					<!-- project -->
+					<a href="https://memoryblocks.vercel.app/"
+						class="project-link" target="_blank">
+						<div class="project-container blue-bg light-shadow" data-aos="fade-up" data-aos-duration="1000"
+							data-aos-delay="500">
+							<div class="project-content">
+								<div class="combine">
+									<div class="project-img-container">
+										<img class="project-img" src="img/png/memory_blocks.png"
+											alt="student messenger">
+									</div>
+									<div class="project-details-container">
+										<h2 class="project-title text-dark-blue">
+											Memory Blocks
+										</h2>
+										<h3 class="project-details text-dark-blue">
+											A simple memory game that tests the players memory by memorizing the
+increasing number of patterns.
+										</h3>
+									</div>
+								</div>
+								<div class="project-tag-container">
+									<div class="tag-container dark-blue-tag js-tag">
+										React JS
+									</div>
+								</div>
+							</div>
 						</div>
-						<!-- skill -->
-						<div class="box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
-							<img class="skill-icon css-icon" src="img/svg/ai.svg" alt="html">
-							<h2 class="skill-txt">Adobe Illustrator</h2>
+					</a>
+					<!-- project -->
+					<a href="https://csetrainer.onrender.com"
+						class="project-link" target="_blank">
+						<div class="project-container blue-bg light-shadow" data-aos="fade-up" data-aos-duration="1000"
+							data-aos-delay="500">
+							<div class="project-content">
+								<div class="combine">
+									<div class="project-img-container">
+										<img class="project-img" src="img/png/cse_trainer.png"
+											alt="student messenger">
+									</div>
+									<div class="project-details-container">
+										<h2 class="project-title text-dark-blue">
+											CSE trainer
+										</h2>
+										<h3 class="project-details text-dark-blue">
+											A web application for Civil Service Examinee that generates 
+sample questions that they can practice answering it.
+										</h3>
+									</div>
+								</div>
+								<div class="project-tag-container">
+									<div class="tag-container dark-blue-tag js-tag">
+										Mongo DB
+									</div>
+									<div class="tag-container dark-blue-tag js-tag">
+										Express JS
+									</div>
+									<div class="tag-container dark-blue-tag js-tag">
+										React JS
+									</div>
+									<div class="tag-container dark-blue-tag js-tag">
+										Node JS
+									</div>
+								</div>
+							</div>
+						</div>
+					</a>
+					<!-- project -->	
+					<a href="https://github.com/darwin1501/CSE_question_maker"
+					class="project-link" target="_blank">
+					<div class="project-container blue-bg light-shadow" data-aos="fade-up" data-aos-duration="1000"
+						data-aos-delay="500">
+						<div class="project-content">
+							<div class="combine">
+								<div class="project-img-container">
+									<img class="project-img" src="img/png/question_maker.png"
+										alt="student messenger">
+								</div>
+								<div class="project-details-container">
+									<h2 class="project-title text-dark-blue">
+										CSE question Maker
+									</h2>
+									<h3 class="project-details text-dark-blue">
+										A web application that manages questions in my CSE trainer website.
+									</h3>
+								</div>
+							</div>
+							<div class="project-tag-container">
+								<div class="tag-container dark-blue-tag js-tag">
+									Mongo DB
+								</div>
+								<div class="tag-container dark-blue-tag js-tag">
+									Express JS
+								</div>
+								<div class="tag-container dark-blue-tag js-tag">
+									React JS
+								</div>
+								<div class="tag-container dark-blue-tag js-tag">
+									Node JS
+								</div>
+							</div>
 						</div>
 					</div>
-				</div>
-				</div>
-			</div>
-		</div>
-		<!-- my  projects-->
-		<div class="content-group project" id="section4">
-			<h2 class="content-title" data-aos="fade-up" data-aos-duration="1000">My Projects</h2>
-			<hr class="divider" data-aos="fade-up" data-aos-duration="1000"></hr>
-			<p class="project-guide-tips">Tap or Click each card/project to view demo / or source code</p>
-			<div class="projects-list-container">
-				<!-- project -->
-				<a href="https://github.com/darwin1501/Student-Information-System-with-SMS-sender" class="project-link" target="_blank">
-					<div class="project-container green-bg light-shadow" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
-								<div class="project-content">
-								<div class="combine">
-									<div class="project-img-container">
-										<img class="project-img green-shadow" src="img/png/student_messenger.png" alt="student messenger">
-									</div>
-									<div class="project-details-container">
-										<h2 class="project-title text-dark-green">Student Information System with SMS sender</h2>
-										<h3 class="project-details text-dark-green">
-											This student information system provides a starting code in developing Student Information System. This 
-											system includes a login system, user management it also includes a Configuration GUI for configuring
-											SMS Gateway API.
-										</h3>
-									</div>
-								</div>
-								<div class="project-tag-container">
-									<div class="tag-container dark-green-tag js-tag">
-										Laravel
-									</div>
-									<div class="tag-container dark-green-tag webapi-tag">
-										Tailwind CSS
-									</div>
-								</div>
-							</div>						
-						</div>
 					</a>
-				<!-- project -->
-					<a href="https://covid19vaccinetracker.netlify.app/" class="project-link" target="_blank">
-					<div class="project-container blue-bg light-shadow" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" id="project-covac">
-								<div class="project-content">
-								<div class="combine">
-									<div class="project-img-container">
-										<img class="project-img blue-shadow" src="img/png/vaccine.png" alt="vaccine tracker" id="img-project-covac">
-									</div>
-									<div class="project-details-container">
-										<h2 class="project-title text-dark-blue">CoVID19 Vaccine Tracker</h2>
-										<h3 class="project-details text-dark-blue">
-											CoVID19 Vaccine Tracker is a website that provides latest update about
-											CoVID19 possible vaccines. This website allows the users to see the 
-											details of each vaccines. I also designed a search bar, so it will be
-											easy to the users to find the vaccines they want to see.
-										</h3>
-									</div>
-								</div>
-								<div class="project-tag-container">
-									<div class="tag-container dark-blue-tag html-tag">
-										HTML
-									</div>
-									<div class="tag-container dark-blue-tag css-tag">
-										CSS
-									</div>
-									<div class="tag-container dark-blue-tag js-tag">
-										JavaScript
-									</div>
-									<div class="tag-container dark-blue-tag webapi-tag">
-										Web API
-									</div>
-								</div>
-							</div>						
-						</div>
-					</a>
-					<!-- project -->
-					<a href="https://covid19casetracker.netlify.app/" class="project-link" target="_blank">
-						<div class="project-container orange-bg light-shadow" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">						
-							<div class="project-content">
-								<div class="combine">
-									<div class="project-img-container">
-										<img class="project-img orange-shadow" src="img/png/case.png" alt="case tracker">
-									</div>
-									<div class="project-details-container">
-										<h2 class="project-title text-dark-orange">CoVID19 Case Tracker</h2>
-										<h3 class="project-details text-dark-orange">
-											CoVID19 Case Tracker is a website that tracks the CoVID19 case around the world,
-											This website can track daily case, population of each country, and detailed overall case of each country.
-										</h3>
-									</div>
-								</div>
-								<div class="project-tag-container">
-									<div class="tag-container dark-orange-tag html-tag">
-										HTML
-									</div>
-									<div class="tag-container dark-orange-tag css-tag">
-										CSS
-									</div>
-									<div class="tag-container dark-orange-tag js-tag">
-										JavaScript
-									</div>
-									<div class="tag-container dark-orange-tag chartjs-tag">
-										Chart.js
-									</div>
-									<div class="tag-container dark-orange-tag webapi-tag">
-										Web API
-									</div>
-								</div>
-							</div>		
-						</div>
-					</a>
-					<!-- project -->
-					<a href="https://dboardtemplate.netlify.app/" class="project-link" target="_blank">
-						<div class="project-container blue-bg light-shadow" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">						
-							<div class="project-content">
-								<div class="combine">
-									<div class="project-img-container">
-										<img class="project-img blue-shadow" src="img/png/dboard.png" alt="dashbard design">
-									</div>
-									<div class="project-details-container">
-										<h2 class="project-title text-dark-blue">Dashboard Design Template</h2>
-										<h3 class="project-details text-dark-blue">
-											Dashboard design template is a website that provides inspirational
-											dashboard design, It consists of 20 dashboard design, and each design has 3 to 7 widgets , 
-											at the bottom end of the website I created a small program that will automatically sort the data on chart, 
-											I also include all the source code of each template so the users can also study and learn my code.
-										</h3>
-									</div>
-								</div>
-								<div class="project-tag-container">
-									<div class="tag-container dark-blue-tag html-tag">
-										HTML
-									</div>
-									<div class="tag-container dark-blue-tag css-tag">
-										CSS
-									</div>
-									<div class="tag-container dark-blue-tag js-tag">
-										JavaScript
-									</div>
-									<div class="tag-container dark-blue-tag chartjs-tag">
-										Chart.js
-									</div>
-									<div class="tag-container dark-blue-tag aos-tag">
-										AOS
-									</div>
-								</div>
-							</div>					
-						</div>
-					</a>
-					<!-- project -->
-					<a href="https://nsgame.netlify.app/" class="project-link" target="_blank">
-						<div class="project-container green-bg light-shadow" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">						
-							<div class="project-content">
-								<div class="combine">
-									<div class="project-img-container">
-										<img class="project-img green-shadow" src="img/png/nsgame.png" alt="number series game">
-									</div>
-									<div class="project-details-container">
-										<h2 class="project-title text-dark-green">Number Series Test Generator</h2>
-										<h3 class="project-details text-dark-green">
-											Number Series Test Generator is a website that provides infinite number series problem, I made this 
-											website for the people who wants to prepare themselves to number series test. I also designed 
-											this website to show the solution freely on each problem so the users will get a hint 
-											and they will not get feel frustrated whenever they stuck on the problem.
-										</h3>
-									</div>
-								</div>
-								<div class="project-tag-container">
-									<div class="tag-container dark-green-tag html-tag">
-										HTML
-									</div>
-									<div class="tag-container dark-green-tag css-tag">
-										CSS
-									</div>
-									<div class="tag-container dark-green-tag js-tag">
-										JavaScript
-									</div>
-									<div class="tag-container dark-green-tag ai-tag">
-										Adobe Illustrator
-									</div>							
-								</div>
-							</div>
-						</div>
-					</a>
-					<!-- project -->
-					<a href="https://github.com/darwin1501/Student-Profiling-System-in-Guidance-Office-With-SMS-Notification" class="project-link" target="_blank">
-						<div class="project-container blue-bg light-shadow" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">						
-							<div class="project-content">
-								<div class="combine">
-									<div class="project-img-container">
-										<img class="project-img blue-shadow" src="img/png/guidance.png" alt="number series game">
-									</div>
-									<div class="project-details-container">
-										<h2 class="project-title text-dark-blue">Student Profiling Information System in Guidance Office</h2>
-										<h3 class="project-details text-dark-blue">
-											Student Profiling Information System in Guidance Office is 
-											webased information system that manages
-											the offenses of each students. This project is my 
-											thesis and also my first big project, 
-											this is were I learned programming, most of the code here was written 
-											in sphagetti code style, because I was learning on that time.
-										</h3>
-									</div>
-								</div>
-								<div class="project-tag-container">
-									<div class="tag-container dark-blue-tag html-tag">
-										HTML
-									</div>
-									<div class="tag-container dark-blue-tag css-tag">
-										CSS
-									</div>
-									<div class="tag-container dark-blue-tag js-tag">
-										JavaScript
-									</div>
-									<div class="tag-container dark-blue-tag js-tag">
-										Materialize CSS
-									</div>
-									<div class="tag-container dark-blue-tag php-tag">
-										php
-									</div>
-									<div class="tag-container dark-blue-tag mysql-tag">
-										MySQL
-									</div>
-									<div class="tag-container dark-blue-tag ps-tag">
-										Adobe Photoshop
-									</div>
-								</div>
-							</div>
-						</div>
-					</a>
-					
+					<div style="display: flex; justify-content: center;">
+						<button class="btn-view">View all of my projects on github</button>
+					</div>
 				</div>
 			</div>
-		<!-- Contacts -->
-		<div class="content-group contact" id="section5">
-			<hr class="divider" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"></hr>
-			<h2 class="content-title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">Contact</h2>
-			<hr class="divider-xs" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"></hr>
-			<h2 class="contact-txt" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">darwin.projectdesign@gmail.com</h2>
-			<h2 class="contact-lbl">You can find me on</h2>
-			<div class="link-master-container">
-				<div class="link-container">
-					<h3><a class="link-txt" href="https://codepen.io/darwin1501" target="_blank">codepen.io/darwin1501</a></h3>
-					<h3><a class="link-txt" href="https://github.com/darwin1501" target="_blank">github.com/darwin1501</a></h3>
-					<h3><a class="link-txt" href="https://dribbble.com/darwin15" target="_blank">dribbble.com/darwin15</a></h3>
+			<!-- Contacts -->
+			<div class="content-group contact" id="section5">
+				<hr class="divider" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+				</hr>
+				<h2 class="content-title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">Contact</h2>
+				<hr class="divider-xs" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+				</hr>
+				<!-- <h2 class="contact-txt" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+					darwin.projectdesign@gmail.com</h2> -->
+				<h2 class="contact-lbl">You can find me on</h2>
+				<div class="link-master-container">
+					<div class="link-container">
+						<h3><a class="link-txt" href="https://codepen.io/darwin1501"
+								target="_blank">codepen.io/darwin1501</a></h3>
+						<h3><a class="link-txt" href="https://github.com/darwin1501"
+								target="_blank">github.com/darwin1501</a></h3>
+						<h3><a class="link-txt" href="https://dribbble.com/darwin15"
+								target="_blank">dribbble.com/darwin15</a></h3>
+					</div>
 				</div>
 			</div>
-		</div>
-		<footer>
-			<div class="footer-img" id="footer-img">
-				<img src="img/svg/astronaut_center_night.svg">
-  				<img id="img_default_footer" src="img/svg/astronaut_center.svg">
-			</div>
-		</footer>
-	</main>
-</div>
-<!-- <div class="content" style="padding-bottom: 1200px;"></div> -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="js/logic.js"></script>
-<script>
-  AOS.init({
-  	once: true
-  });
-</script>
+			<footer>
+				<div class="footer-img" id="footer-img">
+					<img src="img/svg/astronaut_center_night.svg">
+					<img id="img_default_footer" src="img/svg/astronaut_center.svg">
+				</div>
+			</footer>
+		</main>
+	</div>
+	<!-- <div class="content" style="padding-bottom: 1200px;"></div> -->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="js/logic.js"></script>
+	<script>
+		AOS.init({
+			once: true
+		});
+	</script>
 </body>
-</html> 
+
+</html>

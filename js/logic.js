@@ -4,7 +4,6 @@ sessionStorage.theme = 'off'
 // change nav that will hide based on theme
 
 var prevScrollpos = window.scrollY
-
 var nav = document.getElementById('myTopnav')
 
 window.addEventListener('scroll', () => {
@@ -38,20 +37,14 @@ window.addEventListener('scroll', () => {
 
   prevScrollpos = currentScrollPos
 
-  // console.log(currentScrollPos);
-
   const home = document.getElementById('home')
-
   const about = document.getElementById('about')
-
   const skills = document.getElementById('skills')
-
   const projects = document.getElementById('projects')
-
   const contact = document.getElementById('contact')
 
+  console.log(currentScrollPos)
   //change the active navigation based on the scroll
-
   if (currentScrollPos === 0) {
     // home
 
@@ -66,51 +59,21 @@ window.addEventListener('scroll', () => {
     contact.classList.remove('highlighted')
   } else if (currentScrollPos > 600 && currentScrollPos <= 800) {
     // about
-
     about.classList.add('highlighted')
-
     home.classList.remove('highlighted')
-
-    skills.classList.remove('highlighted')
-
     projects.classList.remove('highlighted')
-
     contact.classList.remove('highlighted')
-  } else if (currentScrollPos > 800 && currentScrollPos <= 1784) {
-    // skills
-
-    skills.classList.add('highlighted')
-
-    home.classList.remove('highlighted')
-
-    about.classList.remove('highlighted')
-
-    projects.classList.remove('highlighted')
-
-    contact.classList.remove('highlighted')
-  } else if (currentScrollPos > 1784 && currentScrollPos <= 4488) {
+  } else if (currentScrollPos > 801 && currentScrollPos <= 4488) {
     // projects
-
     projects.classList.add('highlighted')
-
     home.classList.remove('highlighted')
-
     about.classList.remove('highlighted')
-
-    skills.classList.remove('highlighted')
-
     contact.classList.remove('highlighted')
-  } else if (currentScrollPos > 4488) {
+  } else if (currentScrollPos > 3500) {
     // contact
-
     contact.classList.add('highlighted')
-
     home.classList.remove('highlighted')
-
     about.classList.remove('highlighted')
-
-    skills.classList.remove('highlighted')
-
     projects.classList.remove('highlighted')
   }
 })
@@ -118,51 +81,32 @@ window.addEventListener('scroll', () => {
 // night and lightmode behavior
 document.getElementById('darkmode-btn').addEventListener('click', function () {
   const themeValue = this.value
-
   // elements that needs to be change
-
   const body = document.querySelector('body')
-
   const imgDefault = document.getElementById('img_default')
-
   const imgDefaultFooter = document.getElementById('img_default_footer')
-
   const topNav = document.getElementById('myTopnav')
-
   const profileImage = document.getElementById('profile-img')
-
   const projectContainer = document.getElementsByClassName('project-container')
-
   const blueShadow = document.getElementsByClassName('blue-shadow')
-
   const blueBg = document.getElementsByClassName('blue-bg')
-
   const darkBlueTag = document.getElementsByClassName('dark-blue-tag')
-
   const greenShadow = document.getElementsByClassName('green-shadow')
-
   const greenBg = document.getElementsByClassName('green-bg')
-
   const darkGreenTag = document.getElementsByClassName('dark-green-tag')
-
   const orangeShadow = document.getElementsByClassName('orange-shadow')
-
   const orangeBg = document.getElementsByClassName('orange-bg')
-
   const darkOrangeTag = document.getElementsByClassName('dark-orange-tag')
-
-  const projectTitle =  document.getElementsByClassName('project-title');
-
-  const projectDetails =  document.getElementsByClassName('project-details');
+  const projectTitle = document.getElementsByClassName('project-title')
+  const projectDetails = document.getElementsByClassName('project-details')
 
   // the easy way to add/remove class
- 
   for (const element of projectTitle) {
-    element.classList.toggle('text-white');
+    element.classList.toggle('text-white')
   }
 
   for (const element of projectDetails) {
-    element.classList.toggle('text-white');
+    element.classList.toggle('text-white')
   }
 
   //shadow around image
@@ -237,18 +181,13 @@ document.getElementById('darkmode-btn').addEventListener('click', function () {
   //light mode
   if (themeValue === 'off') {
     document.getElementById('darkmode-btn').value = 'on'
-
     imgDefault.style.transition = 'all 0.9s ease'
-
     imgDefaultFooter.style.transition = 'all 0.9s ease'
-
     // landing image
     imgDefault.style.opacity = 1
     // footer image
     imgDefaultFooter.style.opacity = 1
-
     body.classList.add('body-lht')
-
     body.classList.remove('body-drk')
 
     for (let element = 0; element < projectContainer.length; element++) {
@@ -258,7 +197,6 @@ document.getElementById('darkmode-btn').addEventListener('click', function () {
     }
 
     profileImage.classList.add('profile-light')
-
     profileImage.classList.remove('profile-night')
 
     if (window.scrollY === 0) {
@@ -273,62 +211,47 @@ document.getElementById('darkmode-btn').addEventListener('click', function () {
     // night mode
   } else if (themeValue === 'on') {
     document.getElementById('darkmode-btn').value = 'off'
-
     imgDefault.style.transition = 'all 0.9s ease'
-
     imgDefaultFooter.style.transition = 'all 0.9s ease'
-
     // landing image
     imgDefault.style.opacity = 0
     // footer image
     imgDefaultFooter.style.opacity = 0
-
     body.classList.add('body-drk')
-
     body.classList.remove('body-lht')
 
     for (let element = 0; element < projectContainer.length; element++) {
       projectContainer[element].classList.add('night-shadow')
-
       projectContainer[element].classList.remove('light-shadow')
     }
 
     profileImage.classList.add('profile-night')
-
     profileImage.classList.remove('profile-light')
 
     if (window.scrollY === 0) {
       topNav.classList.remove('nav-bg-night')
-
       topNav.classList.remove('nav-bg-light')
     } else {
       topNav.classList.add('nav-bg-night')
-
       topNav.classList.remove('nav-bg-light')
     }
   }
 
   sessionStorage.theme = themeValue
-
   // console.log(sessionStorage.theme);
 })
 
 // navigation behavior
 function myFunction () {
   var x = document.getElementById('myTopnav')
-
   var menuIcon = document.getElementsByClassName('bar-container')
-
   var toggleBtn = document.getElementById('toggle-btn')
 
   // nav.classList.toggle('nav-bg-i');
 
   // console.log(window.scrollY);
-
   toggleBtn.classList.toggle('toggle-hide')
-
   menuIcon[0].classList.toggle('change')
-
   const currentScrollPos = window.scrollY
 
   if (currentScrollPos === 0) {
