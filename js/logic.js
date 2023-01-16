@@ -39,11 +39,9 @@ window.addEventListener('scroll', () => {
 
   const home = document.getElementById('home')
   const about = document.getElementById('about')
-  const skills = document.getElementById('skills')
   const projects = document.getElementById('projects')
   const contact = document.getElementById('contact')
 
-  console.log(currentScrollPos)
   //change the active navigation based on the scroll
   if (currentScrollPos === 0) {
     // home
@@ -51,8 +49,6 @@ window.addEventListener('scroll', () => {
     home.classList.add('highlighted')
 
     about.classList.remove('highlighted')
-
-    skills.classList.remove('highlighted')
 
     projects.classList.remove('highlighted')
 
